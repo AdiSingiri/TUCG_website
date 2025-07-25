@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TUCG | Clients</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+  .menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  @media (max-width: 935px) {
+    .menu-toggle {
+      display: block;
+      position: absolute;
+      top: 1rem;
+      right: 1.5rem;
+    }
+
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: white;
+      width: 100%;
+      padding: 1rem;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 999;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .nav-links.active {
+      display: flex;
+    }
+
+    .dropdown-menu {
+      position: static;
+      box-shadow: none;
+      display: none;
+      padding-left: 1rem;
+    }
+
+    .dropdown.show .dropdown-menu {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: white;
+    color: #003c1c;
+  }
+
+  .carousel-section {
+    width: 100%;
+    padding: 3rem 2rem;
+    background-color: #f8f8f8;
+  }
+
+  .carousel-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2.5rem;
+    text-align: center;
+  }
+
+  .carousel-wrapper {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .carousel-track {
+    display: flex;
+    gap: 2rem;
+    min-width: max-content;
+  }
+
+  .carousel-item {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+    width: 550px;
+    background-color: #ffffff;
+    border: 2px solid #003c1c;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel-item img {
+    height: 160px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
+  }
+
+  .carousel-item h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .carousel-item p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  .client-cta {
+    text-align: center;
+    padding: 4rem 1rem 2rem;
+    background-color: #ffffff;
+  }
+
+  .client-cta a {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #003c1c;
+    text-decoration: none;
+    border: 2px solid #003c1c;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+  }
+
+  .client-cta a:hover {
+    background-color: #003c1c;
+    color: white;
+  }
+
+  @media (max-width: 768px) {
+    .carousel-wrapper {
+      overflow-x: hidden;
+      display: block;
+      padding: 0;
+    }
+
+    .carousel-track {
+      display: block;
+      min-width: 100%;
+    }
+
+    .carousel-item {
+      width: 90% !important;
+      max-width: 100%;
+      margin: 0 auto 2rem;
+    }
+  }
+</style>
+
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-content container">
+      <div class="logo-box">
+        <a href="index.html">
+          <img src="https://i.postimg.cc/KYTFkJNP/TUCG-logo.png" alt="TUC Logo" class="logo">
+        </a>
+        <span class="brand-name">Texas Undergraduate Consulting Group</span>
+      </div>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="goals.html">Our Goals</a></li>
+        <li><a href="clients.html">Clients</a></li>
+        <li><a href="apply.html">Apply</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- CLIENT CARDS (SCROLLABLE) -->
+  <section class="carousel-section">
+    <div class="carousel-title">Clients We've Worked With</div>
+    <div class="carousel-wrapper">
+      <div class="carousel-track">
+        <div class="carousel-item">
+          <img src="https://i.postimg.cc/qvLDmnvP/AE.png" alt="Austin Energy">
+          <h3>Austin Energy</h3>
+          <p>Our team partnered with Austin Energy to identify barriers to electric vehicle (EV) adoption in underserved Austin communities. We found that low awareness of rebates and perceptions of EVs as luxury items were major obstacles. To address this, we developed an interactive dashboard comparing long-term ownership costs and created a targeted outreach brochure. Our recommendations focused on promoting equity, increasing awareness, and supporting Austin's climate and sustainability goals.</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.postimg.cc/nLSRxJ7T/APL.png" alt="Austin Public Library">
+          <h3>Austin Public Library</h3>
+          <p>Our team partnered with Austin Public Library to streamline how they evaluate their programs and services through more consistent and measurable performance metrics. We designed a comprehensive data dictionary and standardized reporting tool, making it easier for APL leadership to track progress and compare results over time. By converting qualitative feedback into actionable quantitative measures, we eliminated ambiguities and improved the reliability of their evaluation process. These tools support data-driven decision-making, ensuring greater clarity and impact in the library's community initiatives.</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.postimg.cc/bwz32J93/vebetter-new.png" alt="VeBetter">
+          <h3>Boston Consulting Group x VeBetter</h3>
+          <p>The project focused on promoting VeBetter, a sustainability app, among UT Austin students through targeted outreach, including social media, campus events, and partnerships with student organizations. The team developed marketing materials and engaged with popular campus locations like coffee shops and residential apartments to increase app adoption. They also provided user experience feedback to improve app onboarding and helped organize community clean-up events. Overall, the initiative aimed to boost sustainable habits and awareness within the student community.</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.postimg.cc/prfJmb9w/MB.png" alt="Mama Betty’s">
+          <h3>Mama Betty’s</h3>
+          <p>Our team worked with Mama Betty’s, a new Tex-Mex restaurant, to assess its performance against similar local competitors. By conducting a detailed benchmark analysis, we found that while the restaurant excelled in revenue per store, there was room to streamline operational costs. Given their emphasis on employee pay and benefits, we focused on optimizing food production expenses through supplier negotiations and potential menu adjustments. We also recommended switching to a more efficient point-of-sale system to boost front-of-house operations and improve overall profitability.</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.postimg.cc/65KhD3gt/ALTR.png" alt="ALTR">
+          <h3>ALTR</h3>
+          <p>We analyzed GitHub Copilot's impact on developer productivity for ALTR AI across three software development teams. Through data analysis of over 900 projects, we found that developers with full Copilot access showed significant reductions in task completion times and improved efficiency metrics. The study revealed sizable productivity increases when the AI tool was properly integrated into development workflows. Our analysis provided ALTR AI with strategic recommendations for optimizing Copilot deployment and maximizing developer efficiency gains.</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.postimg.cc/V6MjhQFJ/partstack.png" alt="Partstack">
+          <h3>Partstack</h3>
+          <p>We developed an email marketing strategy for Partstack, a tech component marketplace, to optimize engagement in an industry with low open rates. Our research identified best practices including optimal send frequencies and welcome email sequences that achieve 4x higher open rates than standard campaigns. We designed custom email templates for welcome sequences, newsletters, and product highlights using HubSpot integration. The strategy provided Partstack with actionable frameworks to improve customer engagement and drive conversions through targeted campaigns.</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.postimg.cc/KcPPrbzV/W-W.png" alt="Wonders and Worries">
+          <h3>Wonders and Worries</h3>
+          <p>We developed a digital engagement strategy for Wonders & Worries, a nonprofit supporting children facing serious illness, to increase awareness and monetization of their podcast and digital resources. Our analysis revealed low engagement with daily podcast listenership, leading to recommendations for influencer partnerships, SEO optimization, and enhanced social media campaigns. We created sponsorship guides, content optimization frameworks, and KPI dashboards to track fundraising efficiency and digital engagement metrics. The strategy provided actionable tools to expand reach, improve discoverability, and build sustainable revenue streams through strategic partnerships.</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.postimg.cc/x85br0N1/papua.png" alt="Papua Coffee">
+          <h3>Papua Coffee</h3>
+          <p>We developed a comprehensive business strategy for Papua Coffee, a functional cold brew shop near UT campus, to address low revenue and customer traffic despite their prime location. Our analysis identified key issues including poor social media presence, lack of customer data collection, and intense competition from nearby coffee shops. We implemented solutions including a loyalty punch card system, BevoPay integration for UT students, and strategic partnerships with local businesses like UT Farm Stand. The strategy delivered immediate results with projected revenue increases over three months and provided Papua Coffee with sustainable customer retention tools and marketing frameworks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA LINK -->
+  <section class="client-cta">
+    <h2 style="margin-bottom: 1rem;">Interested in working with us?</h2>
+    <a href="mailto:texasundergraduatecg@gmail.com">Email Us to Get Started</a>
+    <br>
+  </section>
+  <br>
+
+  <footer class="tucg-footer">
+  <div class="footer-left">
+    <img src="https://i.postimg.cc/KYTFkJNP/TUCG-logo.png" alt="TUCG Logo" class="footer-logo" />
+    <div class="footer-text">
+      <p>2110 Speedway, Austin, TX 78705</p>
+      <p>texasundergraduatecg@gmail.com</p>
+      <p>&copy; 2023 | Texas Undergraduate Consulting Group</p>
+    </div>
+  </div>
+  <div class="footer-icons">
+    <a href="https://www.instagram.com/texasucg/" target="_blank" aria-label="Instagram">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" class="social-icon green-filter" />
+    </a>
+    <a href="https://www.linkedin.com/company/texas-ucg/" target="_blank" aria-label="LinkedIn">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" class="social-icon green-filter" />
+    </a>
+  </div>
+</footer>
+
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+
+</body>
+</html>

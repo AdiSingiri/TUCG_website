@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TUCG | Team</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    .menu-toggle {
+      display: none;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+
+    @media (max-width: 935px) {
+      .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        padding: 1rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 999;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-content container">
+        <div class="logo-box">
+          <a href="index.html">
+            <img src="https://i.postimg.cc/KYTFkJNP/TUCG-logo.png" alt="TUC Logo" class="logo">
+          </a>
+          <span class="brand-name">Texas Undergraduate Consulting Group</span>
+        </div>
+
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="team.html">Our Team</a></li>
+          <li><a href="goals.html">Our Goals</a></li>
+          <li><a href="clients.html">Clients</a></li>
+          <li><a href="apply.html">Apply</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="team-heading-wrapper">
+    <h1 class="team-heading">Executive Team</h1>
+    </div>
+    <div class="team-container">
+      <div class="member-card">
+        <img src="https://i.postimg.cc/rsq20TnW/riyan-new.jpg" alt="Raahil Dhingra">
+        <div class="member-info">
+          <h2><a href="https://www.linkedin.com/in/riyankhoja/" target="_blank">Riyan Khoja</a></h2>
+          <p class="position">President</p>
+          <p class="description">CBHP + Finance '27</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/rsgX5H3H/aniket.png" alt="Carter Goetz">
+        <div class="member-info">
+          <h2><a href="https://www.linkedin.com/in/aniketgupta100/" target="_blank">Aniket Gupta</a></h2>
+          <p class="position">Internal Vice-President</p>
+          <p class="description">BHP + Math '27</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/SQGh0XRG/tanu.png" alt="Riyan Khoja">
+        <div class="member-info">
+          <h2><a href="https://www.linkedin.com/in/tanushreeduggirala/" target="_blank">Tanushree Duggirala</a></h2>
+          <p class="position">External Vice-President</p>
+          <p class="description">CBHP '27</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/VLLczYbP/shreshth-new.png" alt="Phillion Yu">
+        <div class="member-info">
+          <h2><a href="https://www.linkedin.com/in/shreshthsaride/" target="_blank">Shreshth Saride</a></h2>
+          <p class="position">Director of Outreach</p>
+          <p class="description">Business Analytics '28</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/dtHc1z8k/mehak.jpg" alt="Aniket Gupta">
+        <div class="member-info">
+          <h2><a href="https://www.linkedin.com/in/mehak-arora11/" target="_blank">Mehak Arora</a></h2>
+          <p class="position">Director of Academics</p>
+          <p class="description">Business + Sustainability '27</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/htXW7prC/tim-new.png" alt="Ester Yu">
+        <div class="member-info">
+          <h2><a href="https://www.linkedin.com/in/timothy-elmore/" target="_blank">Timothy Elmore</a></h2>
+          <p class="position">Director of Marketing</p>
+          <p class="description">MIS '28</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/Cx9yCkrw/Lauren-new.png" alt="Tanu Duggirala">
+        <div class="member-info">
+          <h2><a href="https://www.linkedin.com/in/lauren-e-chang/" target="_blank">Lauren Chang</a></h2>
+          <p class="position">Director of Outreach</p>
+          <p class="description"> Business + SCM '28</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/VNtxKv2n/arushi.jpg" alt="Soha Sunesara">
+        <div class="member-info">
+          <h2><a href="https://www.linkedin.com/in/arushi-nath-5104032b6/" target="_blank">Arushi Nath</a></h2>
+          <p class="position">Social Chair</p>
+          <p class="description">Biomedical Engineering '27</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/0yT3KxrQ/soha.png" alt="Soha Sunesara">
+        <div class="member-info">
+          <h2><a href="https://www.linkedin.com/in/sohasunesara/" target="_blank">Soha Sunesara</a></h2>
+          <p class="position">Director of Finance</p>
+          <p class="description">Business '28</p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    
+
+    <div class="team-heading-wrapper">
+    <h1 class="team-heading">Analysts</h1>
+    </div>
+    <div class="team-container">
+      <div class="member-card">
+        <img src="https://i.postimg.cc/nrSSFf6n/mehal-a.jpg" alt="Raahil Dhingra">
+        <div class="member-info">
+          <h2><a href="https://www.linkedin.com/in/mehal-agrawal/" target="_blank">Mehal Agrawal</a></h2>
+          <p class="position">Analyst</p>
+          <p class="description">SDS '27</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/02rHtrwj/Ariba.jpg" alt="Raahil Dhingra">
+        <div class="member-info">
+           <h2><a href="https://www.linkedin.com/in/ariba-badarpura-9a9236229/" target="_blank">Ariba Badarpura</a></h2>
+          <p class="position">Analyst</p>
+          <p class="description">Biology '27</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/fTFq1ZcK/Darya.jpg" alt="Raahil Dhingra">
+        <div class="member-info">
+           <h2><a href="https://www.linkedin.com/in/daryaerdogan/" target="_blank">Darya Erdogan</a></h2>
+          <p class="position">Analyst</p>
+          <p class="description">CHBP '27</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/d0cHtBSZ/Abhiram.jpg" alt="Raahil Dhingra">
+        <div class="member-info">
+           <h2><a href="https://www.linkedin.com/in/argadde/" target="_blank">Abhiram Gadde</a></h2>
+          <p class="position">Analyst</p>
+          <p class="description">Computer Science '27</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/fb7H3962/aagya.jpg" alt="Raahil Dhingra">
+        <div class="member-info">
+           <h2><a href="https://www.linkedin.com/in/aagya-ghimire-8052872a4/" target="_blank">Aagya Ghimire</a></h2>
+          <p class="position">Analyst</p>
+          <p class="description">Public Health '27</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/v8206MNs/June.png" alt="Raahil Dhingra">
+        <div class="member-info">
+           <h2><a href="https://www.linkedin.com/in/june-kim-/" target="_blank">June Kim</a></h2>
+          <p class="position">Analyst</p>
+          <p class="description">Corporate Comms. '28</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/7YpXm94t/Anika.jpg" alt="Raahil Dhingra">
+        <div class="member-info">
+           <h2><a href="https://www.linkedin.com/in/anika-koppula/" target="_blank">Anika Koppula</a></h2>
+          <p class="position">Analyst</p>
+          <p class="description">Nueroscience '27</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/NjmDVXfs/parthiv.jpg" alt="Raahil Dhingra">
+        <div class="member-info">
+           <h2>Parthiv Javangula</a></h2>
+          <p class="position">Analyst</p>
+          <p class="description">Nueroscience '27</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/qRbxnXQL/Preesha.jpg" alt="Raahil Dhingra">
+        <div class="member-info">
+           <h2><a href="https://www.linkedin.com/in/preesha-manduva/" target="_blank">Preesha Manduva</a></h2>
+          <p class="position">Analyst</p>
+          <p class="description">Advertising '28</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/FF6xHpYF/Roma.png" alt="Raahil Dhingra">
+        <div class="member-info">
+           <h2><a href="https://www.linkedin.com/in/romamudnal/" target="_blank">Roma Mudnal</a></h2>
+          <p class="position">Analyst</p>
+          <p class="description">CSB '27</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/cCtw3qvx/hazyk.jpg" alt="Raahil Dhingra">
+        <div class="member-info">
+           <h2><a href="https://www.linkedin.com/in/hazyk-obaid/" target="_blank">Hazyk Obaid</a></h2>
+          <p class="position">Analyst</p>
+          <p class="description">Finance '28</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/0rgmdtSp/emilio.png" alt="Raahil Dhingra">
+        <div class="member-info">
+           <h2><a href="https://www.linkedin.com/in/emilio-lopez-del-olmo/" target="_blank">Emilio Lopez del Olmo</a></h2>
+          <p class="position">Analyst</p>
+          <p class="description">Finance '27</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/RC2bD4QT/Priya.jpg" alt="Raahil Dhingra">
+        <div class="member-info">
+           <h2><a href="https://www.linkedin.com/in/priya-patel-80817a1b1/" target="_blank">Priya Patel</a></h2>
+          <p class="position">Analyst</p>
+          <p class="description">Biology '26</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/Hs5PGR61/Victoria.png" alt="Raahil Dhingra">
+        <div class="member-info">
+           <h2><a href="https://www.linkedin.com/in/victoria-reddy/" target="_blank">Victoria Reddy</a></h2>
+          <p class="position">Analyst</p>
+          <p class="description">Computer Science '28</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/q77L75xR/Brianna.jpg" alt="Raahil Dhingra">
+        <div class="member-info">
+           <h2><a href="https://www.linkedin.com/in/briannasilvaut27/" target="_blank">Brianna Silva</a></h2>
+          <p class="position">Analyst</p>
+          <p class="description">CBHP + Finance '27</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/cC7YhRB2/Aditya.png" alt="Raahil Dhingra">
+        <div class="member-info">
+           <h2><a href="https://www.linkedin.com/in/aditya-singirikonda/" target="_blank">Aditya Singirikonda</a></h2>
+          <p class="position">Analyst</p>
+          <p class="description">Computer Science '28</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/6ppRVG2b/Ananya.png" alt="Raahil Dhingra">
+        <div class="member-info">
+           <h2><a href="https://www.linkedin.com/in/ananya-swaminathan-973942231/" target="_blank">Ananya Swaminathan</a></h2>
+          <p class="position">Analyst</p>
+          <p class="description">Mechanical Engineering '28</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/y6hSwT0r/Sophia.png" alt="Raahil Dhingra">
+        <div class="member-info">
+           <h2><a href="https://www.linkedin.com/in/sophiaztang/" target="_blank">Sophia Tang</a></h2>
+          <p class="position">Analyst</p>
+          <p class="description">CBHP '28</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/3wpw2KBb/Zarik.jpg" alt="Raahil Dhingra">
+        <div class="member-info">
+           <h2><a href="https://www.linkedin.com/in/zariktao/" target="_blank">Zarik Tao</a></h2>
+          <p class="position">Analyst</p>
+          <p class="description">CBHP + MIS '27</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/k4vXhfLQ/B.png" alt="Raahil Dhingra">
+        <div class="member-info">
+           <h2><a href="https://www.linkedin.com/in/bohdantychyna/" target="_blank">Bohdan Tychana</a></h2>
+          <p class="position">Analyst</p>
+          <p class="description">Economics '28</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/C5MLybVW/Rachel.jpg" alt="Raahil Dhingra">
+        <div class="member-info">
+           <h2><a href="https://www.linkedin.com/in/rachel-zhang-10127524a/" target="_blank">Rachel Zhang</a></h2>
+          <p class="position">Analyst</p>
+          <p class="description">SDS '26</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/3r9xXfX7/Avery.jpg" alt="Raahil Dhingra">
+        <div class="member-info">
+           <h2><a href="https://www.linkedin.com/in/avery-zhao/" target="_blank">Avery Zhao</a></h2>
+          <p class="position">Analyst</p>
+          <p class="description">CBHP '28</p>
+        </div>
+      </div>
+
+      
+
+      
+
+
+    </div>
+
+    <div class="team-heading-wrapper">
+    <h1 class="team-heading">Senior Advisors</h1>
+    </div>
+    <div class="team-container">
+      <div class="member-card">
+        <img src="https://i.postimg.cc/gj59Mhcy/Leonardo.jpg" alt="Raahil Dhingra">
+        <div class="member-info">
+           <h2><a href="https://www.linkedin.com/in/leonardoandrade2/" target="_blank">Leonardo Andrade</a></h2>
+          <p class="position">Senior Advisor</p>
+          <p class="description">MIS '26</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/jqkrqp6W/Ariya.jpg" alt="Raahil Dhingra">
+        <div class="member-info">
+           <h2><a href="https://www.linkedin.com/in/ariyadatta/" target="_blank">Ariya Datta</a></h2>
+          <p class="position">Senior Advisor</p>
+          <p class="description">Finance '27</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/DyJ3Sx5x/Raahil.jpg" alt="Raahil Dhingra">
+        <div class="member-info">
+           <h2><a href="https://www.linkedin.com/in/raahildhingra/" target="_blank">Raahil Dhingra</a></h2>
+          <p class="position">Senior Advisor</p>
+          <p class="description">Business Analytics '26</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/PrgsY1RT/Advik.jpg" alt="Raahil Dhingra">
+        <div class="member-info">
+           <h2><a href="https://www.linkedin.com/in/advik-dixit/" target="_blank">Advik Dixit</a></h2>
+          <p class="position">Senior Advisor</p>
+          <p class="description">Economics '26</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/9f26NC2k/ben.jpg" alt="Raahil Dhingra">
+        <div class="member-info">
+           <h2><a href="https://www.linkedin.com/in/benduong05/" target="_blank">Ben Duong</a></h2>
+          <p class="position">Senior Advisor</p>
+          <p class="description">CBHP '26</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/RCYjxc9K/Sanjana.jpg" alt="Raahil Dhingra">
+        <div class="member-info">
+           <h2><a href="https://www.linkedin.com/in/sanjanaganesh/" target="_blank">Sanjana Ganesh</a></h2>
+          <p class="position">Senior Advisor</p>
+          <p class="description">Business Analytics '26</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/sDZbjvD8/carter.jpg" alt="Raahil Dhingra">
+        <div class="member-info">
+           <h2><a href="https://www.linkedin.com/in/cartergoetz/" target="_blank">Carter Goetz</a></h2>
+          <p class="position">Senior Advisor</p>
+          <p class="description">Math + Economics '26</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/6prSZgZf/Sheena.jpg" alt="Raahil Dhingra">
+        <div class="member-info">
+           <h2><a href="https://www.linkedin.com/in/sheenagupta468/" target="_blank">Sheena Gupta</a></h2>
+          <p class="position">Senior Advisor</p>
+          <p class="description">Business '27</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/CKJQP8mZ/rudy.jpg" alt="Raahil Dhingra">
+        <div class="member-info">
+           <h2><a href="https://www.linkedin.com/in/rudylea/" target="_blank">Rudy Lea III</a></h2>
+          <p class="position">Senior Advisor</p>
+          <p class="description">CBHP + Finance '26</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/j55kGjFM/Chelsie.jpg" alt="Raahil Dhingra">
+        <div class="member-info">
+           <h2><a href="https://www.linkedin.com/in/chelsie-lopez-chl/" target="_blank">Chelsie Lopez</a></h2>
+          <p class="position">Senior Advisor</p>
+          <p class="description">Finance '26</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/cHb5ZSq0/moid.jpg" alt="Raahil Dhingra">
+        <div class="member-info">
+           <h2><a href="https://www.linkedin.com/in/moid-meghani/" target="_blank">Moid Meghani</a></h2>
+          <p class="position">Senior Advisor</p>
+          <p class="description">ECB '26</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/5yQK2R1v/Abigail.jpg" alt="Raahil Dhingra">
+        <div class="member-info">
+           <h2><a href="https://www.linkedin.com/in/abigailmimbela/" target="_blank">Abigail Mimbela</a></h2>
+          <p class="position">Senior Advisor</p>
+          <p class="description">CBHP + Finance '26</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/MXkPMmKL/Pranjal.jpg" alt="Raahil Dhingra">
+        <div class="member-info">
+           <h2><a href="https://www.linkedin.com/in/pranjal--rai/" target="_blank">Pranjal Rai</a></h2>
+          <p class="position">Senior Advisor</p>
+          <p class="description">Computer Science '26</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/FFfhSFHb/pranav.jpg" alt="Raahil Dhingra">
+        <div class="member-info">
+           <h2><a href="https://www.linkedin.com/in/pranavtenneti/" target="_blank">Pranav Tenneti</a></h2>
+          <p class="position">Senior Advisor</p>
+          <p class="description">ECB '26</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <img src="https://i.postimg.cc/XYWWtwcx/Areg.jpg" alt="Raahil Dhingra">
+        <div class="member-info">
+           <h2><a href="https://www.linkedin.com/in/aregvartanian/" target="_blank">Areg Vartanian</a></h2>
+          <p class="position">Senior Advisor</p>
+          <p class="description">Business '26</p>
+        </div>
+      </div>
+
+      
+
+
+    </div>
+
+
+
+
+
+  </main>
+
+  <footer class="tucg-footer">
+  <div class="footer-left">
+    <img src="https://i.postimg.cc/KYTFkJNP/TUCG-logo.png" alt="TUCG Logo" class="footer-logo" />
+    <div class="footer-text">
+      <p>2110 Speedway, Austin, TX 78705</p>
+      <p>texasundergraduatecg@gmail.com</p>
+      <p>&copy; 2023 | Texas Undergraduate Consulting Group</p>
+    </div>
+  </div>
+  <div class="footer-icons">
+    <a href="https://www.instagram.com/texasucg/" target="_blank" aria-label="Instagram">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" class="social-icon green-filter" />
+    </a>
+    <a href="https://www.linkedin.com/company/texas-ucg/" target="_blank" aria-label="LinkedIn">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" class="social-icon green-filter" />
+    </a>
+  </div>
+</footer>
+
+  <script>
+    // Hamburger menu
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+  </script>
+
+
+</body>
+</html>

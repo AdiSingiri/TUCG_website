@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TUCG | Goals</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    } 
+
+    .menu-toggle {
+      display: none;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+
+    @media (max-width: 935px) {
+      .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        padding: 1rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 999;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        display: none;
+        padding-left: 1rem;
+      }
+
+      .dropdown.show .dropdown-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      list-style: none;
+      z-index: 1000;
+    }
+
+    .dropdown.show .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-menu li a {
+      display: block;
+      padding: 0.3rem 0;
+      text-decoration: none;
+      color: #003c1c;
+      font-weight: 600;
+    }
+
+    .dropdown-toggle {
+      cursor: pointer;
+    }
+
+    .carousel-image {
+      width: 100%;
+      max-width: 1223px;
+      height: auto;
+      aspect-ratio: 3 / 2;
+      object-fit: cover;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: opacity 0.5s ease;
+    }
+  
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-content container">
+      <div class="logo-box">
+        <a href="index.html">
+          <img src="https://i.postimg.cc/KYTFkJNP/TUCG-logo.png" alt="TUC Logo" class="logo" />
+        </a>
+        <span class="brand-name">Texas Undergraduate Consulting Group</span>
+      </div>
+
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="goals.html">Our Goals</a></li>
+        <li><a href="clients.html">Clients</a></li>
+        <li><a href="apply.html">Apply</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="team-heading-wrapper">
+      <h1 class="team-heading">Our Goals</h1>
+    </div>
+    <br>
+
+    <div class="apply-buttons">
+      <a href="#clients" class="outlined-btn">Clients</a>
+      <a href="#meetings" class="outlined-btn">Meetings</a>
+      <a href="#workshops" class="outlined-btn">Workshops</a>
+      <a href="#socials" class="outlined-btn">Socials</a>
+      <a href="#volunteering" class="outlined-btn">Volunteering</a>
+    </div>
+
+    <!-- Clients -->
+    <section class="content-row container" id="clients">
+      <div class="text-box green-box">
+        <h2>Clients</h2>
+        <br>
+        <p>
+          Every semester, TUCG works with clients across Texas from a diverse range of industries. We aim to help small businesses and government entities grow and succeed. Client work allows our members to learn from real business owners and leaders while also providing help to organizations.
+        </p>
+        <div class="hero-buttons" style="padding-right: 1rem;">
+          <a href="clients.html" class="btn">View Clients</a>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="https://i.postimg.cc/fL2J58GV/prev-clients.png" alt="Clients" />
+      </div>
+    </section>
+
+    <!-- Meetings -->
+    <section class="content-row container" id="meetings">
+      <div class="image-box">
+        <img src="https://i.postimg.cc/FswBdmn6/main-photo.png" alt="Meetings" />
+      </div>
+      <div class="text-box green-box">
+        <h2>Meetings</h2>
+        <br>
+        <p>
+          Throughout the first semester of TUCG, new members are required to take part in a six week consultant training course that teaches everything from research to presentation skills to excel.
+
+          Our curriculum has been carefully curated through intensive research and experience from firms such as McKinsey & Company.
+
+          Client work and problem solving sessions also take place during our weekly meetings.
+        </p>
+      </div>
+    </section>
+
+    <!-- Workshops -->
+    <section class="content-row container" id="workshops">
+      <div class="text-box green-box">
+        <h2>Workshops</h2>
+        <br>
+        <p>
+          TUCG was created to give all students across UT the opportunity to learn what a consultant does and the skills needed to succeed in any professional environment.
+
+          We host three workshops throughout the semester to teach students how to put together the perfect slide deck and utilize excel for professional needs.
+
+          Our third workshop gives students the chance to work on a mock client project as we provide a mock dataset and guide you through what the job of a consultant really looks like.
+        </p>
+      </div>
+      <div class="image-box">
+        <img src="https://i.postimg.cc/PJpMTvh5/main-2.png" alt="Workshops" />
+      </div>
+    </section>
+
+    <!-- Socials -->
+    <section class="content-row container" id="socials">
+      <div class="image-box">
+        <div class="carousel-container">
+          <img class="carousel-image" id="carousel-social-image" src="https://i.postimg.cc/fWCKQZNd/social1.png" alt="Socials Image" />
+        </div>
+      </div>
+      <div class="text-box green-box">
+        <h2>Socials</h2>
+        <br>
+        <p>
+          Every semester we host various social events for our members to take a break from work and projects to enjoy each other’s company through food, games, and festivities.
+
+          Our members are also sorted into families for competitions at our socials and other events.
+        </p>
+      </div>
+    </section>
+
+    <!-- Volunteering -->
+    <section class="content-row container" id="volunteering">
+      <div class="text-box green-box">
+        <h2>Volunteering</h2>
+        <br>
+        <p>
+          As part of our aim to give back, our members are required to participate in at least one volunteering activity throughout the semester.
+
+          We believe that giving back to your community is a vital aspect of creating strong and empathetic leaders.
+
+          Each family must also host one fundraising event for a cause of their choice.
+
+          Taking care of your community is the cornerstone of leadership, and we strive to help our members achieve that goal.
+        </p>
+      </div>
+      <div class="image-box">
+        <div class="carousel-container">
+          <img class="carousel-image" id="carousel-volunteering-image" src="https://i.postimg.cc/d0hXL3Jg/volunteering1.png" alt="Volunteering Image" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="tucg-footer">
+  <div class="footer-left">
+    <img src="https://i.postimg.cc/KYTFkJNP/TUCG-logo.png" alt="TUCG Logo" class="footer-logo" />
+    <div class="footer-text">
+      <p>2110 Speedway, Austin, TX 78705</p>
+      <p>texasundergraduatecg@gmail.com</p>
+      <p>&copy; 2023 | Texas Undergraduate Consulting Group</p>
+    </div>
+  </div>
+  <div class="footer-icons">
+    <a href="https://www.instagram.com/texasucg/" target="_blank" aria-label="Instagram">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" class="social-icon green-filter" />
+    </a>
+    <a href="https://www.linkedin.com/company/texas-ucg/" target="_blank" aria-label="LinkedIn">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" class="social-icon green-filter" />
+    </a>
+  </div>
+</footer>
+
+  <script>
+    const dropdownToggle = document.querySelector('.dropdown-toggle');
+    const dropdown = document.querySelector('.dropdown');
+    
+
+    // dropdownToggle.addEventListener('click', (e) => {
+    //   e.preventDefault();
+    //   dropdown.classList.toggle('show');
+    // });
+
+    // document.addEventListener('click', function (e) {
+    //   if (!dropdown.contains(e.target) && !e.target.classList.contains("dropdown-toggle")) {
+    //     dropdown.classList.remove('show');
+    //   }
+    // });
+
+    // menuToggle.addEventListener("click", () => {
+    //   navLinks.classList.toggle("show");
+    // });
+
+    // Volunteering Carousel
+    const volunteeringImages = [
+      "https://i.postimg.cc/d0hXL3Jg/volunteering1.png",
+      "https://i.postimg.cc/VN2hMw6v/volunteering2.png",
+      "https://i.postimg.cc/RhBbsTwz/volunteering3.png",
+      "https://i.postimg.cc/4yQ2rh1H/volunteering4.png",
+      "https://i.postimg.cc/v8tP8fWc/volunteering5.png",
+      "https://i.postimg.cc/rFhQxTZT/volunteering6.png"
+    ];
+    let volunteeringIndex = 0;
+    const volunteeringImg = document.getElementById("carousel-volunteering-image");
+
+    function showNextVolunteering() {
+      volunteeringIndex = (volunteeringIndex + 1) % volunteeringImages.length;
+      volunteeringImg.src = volunteeringImages[volunteeringIndex];
+    }
+
+    setInterval(showNextVolunteering, 5000);
+    volunteeringImg.addEventListener("click", showNextVolunteering);
+
+    // Socials Carousel
+    const socialImages = [
+      "https://i.postimg.cc/fWCKQZNd/social1.png",
+      "https://i.postimg.cc/V6Rjw93w/social2.png",
+      "https://i.postimg.cc/vTZ5ZgsV/social3.png",
+      "https://i.postimg.cc/d3NrkssS/social4.png",
+      "https://i.postimg.cc/8z6Mcgqt/social5.png",
+      "https://i.postimg.cc/5NHFKMNb/social6.png"
+    ];
+    let socialIndex = 0;
+    const socialImg = document.getElementById("carousel-social-image");
+
+    function showNextSocial() {
+      socialIndex = (socialIndex + 1) % socialImages.length;
+      socialImg.src = socialImages[socialIndex];
+    }
+
+    setInterval(showNextSocial, 5000);
+    socialImg.addEventListener("click", showNextSocial);
+
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Texas Undergraduate Consulting Group</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    .menu-toggle {
+      display: none;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+
+    @media (max-width: 935px) {
+      .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        padding: 1rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 999;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        display: none;
+        padding-left: 1rem;
+      }
+
+      .dropdown.show .dropdown-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      list-style: none;
+      z-index: 1000;
+    }
+
+    .dropdown.show .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-menu li a {
+      display: block;
+      padding: 0.3rem 0;
+      text-decoration: none;
+      color: #003c1c;
+      font-weight: 600;
+    }
+
+    .dropdown-toggle {
+      cursor: pointer;
+    }
+
+    .carousel-image {
+      width: 100%;
+      max-width: 1223px;
+      height: auto;
+      aspect-ratio: 3 / 2;
+      object-fit: cover;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: opacity 0.5s ease;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="nav-content container">
+      <div class="logo-box">
+        <a href="index.html">
+          <img src="https://i.postimg.cc/KYTFkJNP/TUCG-logo.png" alt="TUC Logo" class="logo">
+        </a>
+        <span class="brand-name">Texas Undergraduate Consulting Group</span>
+      </div>
+
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="goals.html">Our Goals</a></li>
+        <li><a href="clients.html">Clients</a></li>
+        <li><a href="apply.html">Apply</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <img src="https://i.postimg.cc/dVxtT7KY/banner.png" alt="Group Photo" class="hero-img">
+    <div class="hero-text">
+      <h2>Texas TUCG</h2>
+      <p class="sub">Texas Undergraduate Consulting Group</p>
+      <p class="desc">Logic-driven solutions, human-centered impact.</p>
+      <div class="hero-buttons">
+        <a href="team.html" class="btn">Our Team</a>
+        <a href="apply.html" class="btn">Join Us</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="content-row container">
+    <div class="text-box green-box">
+      <h1>Our Mission</h1>
+      <br>
+      <p>
+        TUCG was created with one primary objective, and it’s not to create more management consultants.
+        We strive to build leaders equipped with skills and experience to bring lasting change to their communities. Through our work with clients and volunteering, we build a strong community of friends, colleagues, and change–makers.
+        We strive to combine the strengths of students of all majors with an emphasis on STEM and business.
+      </p>
+      <div class="hero-buttons">
+        <a href="goals.html" class="btn">Our Goals</a>
+      </div>
+    </div>
+    <div class="image-box">
+      <div class="carousel-container">
+        <img src="https://i.postimg.cc/PJpMTvh5/main-2.png" class="carousel-image" id="mission-carousel" alt="Mission Carousel">
+      </div>
+    </div>
+  </section>
+
+  <section class="content-row container">
+    <div class="image-box">
+      <div class="carousel-container">
+        <img src="https://i.postimg.cc/FswBdmn6/main-photo.png" class="carousel-image" id="experience-carousel" alt="Experience Carousel">
+      </div>
+    </div>
+    <div class="text-box green-box">
+      <h2>Holistic Experience</h2>
+      <br>
+      <p>
+        TUCG strives to go beyond just being a professional organization. The Group works to build members into capable leaders,
+        prepared to grow any community they join. Through community service, client work, and educational experiences, TUCG provides a holistic experience for its members
+        to go beyond the campus and consulting.
+      </p>
+      <div class="hero-buttons">
+        <a href="apply.html" class="btn">Apply</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="impact-section">
+    <div class="overlay">
+      <div class="stats-wrapper">
+        <h3>Our Impact</h3>
+        <div class="stats-grid">
+          <div class="stat-box">
+            <h1>15+</h1>
+            <p>Clients Helped</p>
+          </div>
+          <div class="stat-box">
+            <h1>50+</h1>
+            <p>Active Members</p>
+          </div>
+          <div class="stat-box">
+            <h1>20+</h1>
+            <p>Consulting Projects</p>
+          </div>
+          <div class="stat-box">
+            <h1>100%</h1>
+            <p>Passion for Impact</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="tucg-footer">
+  <div class="footer-left">
+    <img src="https://i.postimg.cc/KYTFkJNP/TUCG-logo.png" alt="TUCG Logo" class="footer-logo" />
+    <div class="footer-text">
+      <p>2110 Speedway, Austin, TX 78705</p>
+      <p>texasundergraduatecg@gmail.com</p>
+      <p>&copy; 2023 | Texas Undergraduate Consulting Group</p>
+    </div>
+  </div>
+  <div class="footer-icons">
+    <a href="https://www.instagram.com/texasucg/" target="_blank" aria-label="Instagram">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" class="social-icon green-filter" />
+    </a>
+    <a href="https://www.linkedin.com/company/texas-ucg/" target="_blank" aria-label="LinkedIn">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" class="social-icon green-filter" />
+    </a>
+  </div>
+</footer>
+
+
+
+
+
+  <script>
+    // Mission Carousel
+    const missionImages = ["https://i.postimg.cc/PJpMTvh5/main-2.png", "https://i.postimg.cc/FswBdmn6/main-photo.png"];
+    let missionIndex = 0;
+    const missionImg = document.getElementById("mission-carousel");
+
+    function showNextMission() {
+      missionIndex = (missionIndex + 1) % missionImages.length;
+      missionImg.src = missionImages[missionIndex];
+    }
+
+    setInterval(showNextMission, 5000);
+    missionImg.addEventListener("click", showNextMission);
+
+    // Experience Carousel
+    const experienceImages = ["https://i.postimg.cc/FswBdmn6/main-photo.png", "https://i.postimg.cc/PJpMTvh5/main-2.png"];
+    let experienceIndex = 0;
+    const experienceImg = document.getElementById("experience-carousel");
+
+    function showNextExperience() {
+      experienceIndex = (experienceIndex + 1) % experienceImages.length;
+      experienceImg.src = experienceImages[experienceIndex];
+    }
+
+    setInterval(showNextExperience, 5000);
+    experienceImg.addEventListener("click", showNextExperience);
+
+    // Hamburger menu
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+
+    // Dropdown
+    const dropdownToggle = document.querySelector('.dropdown-toggle');
+    const dropdown = document.querySelector('.dropdown');
+
+    if (dropdownToggle) {
+      dropdownToggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        dropdown.classList.toggle('show');
+      });
+
+      document.addEventListener('click', function (e) {
+        if (!dropdown.contains(e.target) && !e.target.classList.contains("dropdown-toggle")) {
+          dropdown.classList.remove('show');
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>

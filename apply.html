@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TUCG | Apply</title>
+  <link rel="stylesheet" href="styles/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    .menu-toggle {
+      display: none;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+
+    @media (max-width: 935px) {
+      .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        padding: 1rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 999;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-content container">
+        <div class="logo-box">
+          <a href="index.html">
+            <img src="https://i.postimg.cc/KYTFkJNP/TUCG-logo.png" alt="TUC Logo" class="logo">
+          </a>
+          <span class="brand-name">Texas Undergraduate Consulting Group</span>
+        </div>
+
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="team.html">Our Team</a></li>
+          <li><a href="goals.html">Our Goals</a></li>
+          <li><a href="clients.html">Clients</a></li>
+          <li><a href="apply.html">Apply</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="apply-hero">
+    <img src="https://i.postimg.cc/PJpMTvh5/main-2.png" alt="Team Group" class="apply-banner-img"/>
+    <div class="apply-overlay">
+      <h1>Join <span class="highlight-green">TUCG</span></h1>
+    </div>
+  </section>
+
+  <section class="apply-details">
+    <h2><span class="bold">Fall 2025</span> <span class="highlight-green">Recruitment</span></h2>
+    <p>
+      Please fill out the interest form to ensure you're on our radar! Applications will be released at the beginning of the semester.
+      Just a reminder, attendance at one information session will be required to apply. The recruitment timeline will be posted on our Instagram.
+    </p>
+    <div class="apply-buttons">
+      <a href="#" class="outlined-btn">Interest Form</a>
+      <a href="#" class="outlined-btn">Application</a>
+      <a href="https://www.instagram.com/texasucg/" class="outlined-btn">Recruitment Timeline</a>
+    </div>
+  </section>
+
+ <footer class="tucg-footer">
+  <div class="footer-left">
+    <img src="https://i.postimg.cc/KYTFkJNP/TUCG-logo.png" alt="TUCG Logo" class="footer-logo" />
+    <div class="footer-text">
+      <p>2110 Speedway, Austin, TX 78705</p>
+      <p>texasundergraduatecg@gmail.com</p>
+      <p>&copy; 2023 | Texas Undergraduate Consulting Group</p>
+    </div>
+  </div>
+  <div class="footer-icons">
+    <a href="https://www.instagram.com/texasucg/" target="_blank" aria-label="Instagram">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" class="social-icon green-filter" />
+    </a>
+    <a href="https://www.linkedin.com/company/texas-ucg/" target="_blank" aria-label="LinkedIn">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" class="social-icon green-filter" />
+    </a>
+  </div>
+</footer>
+
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>
